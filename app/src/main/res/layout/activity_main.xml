@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDeck"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPileCard"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:background="@drawable/ic_launcher_background"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCard2"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCard1" />
+
+    <TextView
+        android:id="@+id/textViewCard3"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCard2" />
+
+    <TextView
+        android:id="@+id/textViewCard4"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="1dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/textViewCard3" />
+
+    <TextView
+        android:id="@+id/textViewCard1"
+        android:layout_width="80dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScrollRight"
+        android:layout_width="52dp"
+        android:layout_height="47dp"
+        android:text="right"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCard4" />
+
+    <TextView
+        android:id="@+id/textViewScrollLeft"
+        android:layout_width="52dp"
+        android:layout_height="47dp"
+        android:text="left"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCard1"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCard1"
+        app:layout_constraintStart_toStartOf="@+id/textViewCard1"
+        app:layout_constraintTop_toTopOf="@+id/textViewCard1" />
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCard2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCard3"
+        app:layout_constraintStart_toEndOf="@+id/textViewCard1"
+        app:layout_constraintTop_toTopOf="@+id/textViewCard2" />
+
+    <TextView
+        android:id="@+id/textViewPileNum"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPileCard"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPileCard"
+        app:layout_constraintStart_toStartOf="@+id/textViewPileCard"
+        app:layout_constraintTop_toTopOf="@+id/textViewPileCard" />
+
+    <TextView
+        android:id="@+id/textViewNum3"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCard3"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCard3"
+        app:layout_constraintStart_toStartOf="@+id/textViewCard3"
+        app:layout_constraintTop_toTopOf="@+id/textViewCard3" />
+
+    <TextView
+        android:id="@+id/textViewNum4"
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCard4"
+        app:layout_constraintTop_toTopOf="@+id/textViewCard4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
